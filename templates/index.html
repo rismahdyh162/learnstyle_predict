@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>VAK Predict</title>
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}" >
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/animate.css')}}">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.min.css')}}" >
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/themify-icons.css')}}" >
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/flaticon.css')}}" >
+    <link rel="stylesheet" href="{{url_for('static', filename='css/nice-select.css')}}" >
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/magnific-popup.css')}}" >
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/slick.css')}}" >
+    <!-- Boostrap Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu home_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html"> <img src="{{ url_for('static', filename='img/logo.png') }}" alt="logo"> 
+                            <span class="brand-text">Predict Learning Style</span></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse main-menu-item justify-content-end"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav align-items-center">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+
+
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#model_vak">VAK</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#prediksi">Predict</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header part end-->
+
+    <!-- banner part start-->
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-xl-6">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                            <h5>Belajar lebih efektif, dengan caramu sendiri!</h5>
+                            <h1>PREDIKSI GAYA BELAJAR</h1>
+                            <p>Temukan gaya belajar yang paling cocok  berdasarkan aktivitas belajar.  <br> Yuk, klik tombol di bawah ini untuk mengetahui gaya belajar Anda sekarang!</p>
+                            <a href="#prediksi" class="btn_1">Prediksi Sekarang </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
+
+    <!-- feature_part start-->
+    <section class="feature_part" id="model_vak">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xl-3 align-self-center">
+                    <div class="single_feature_text ">
+                        <h2>Model VAK</h2>
+                        <p>Mengelompokkan gaya belajar seseorang berdasarkan <b>Visual, Auditori, atau Kinestik</b>, dapat membantu siswa dalam menjalani proses pembelajaran dengan lebih efektif dan menyenangkan. </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <span class="single_feature_icon"><i class="bi bi-eye"></i></span>
+                            <h4>Visual</h4>
+                            <p>Belajar dengan cara melihat, seperti melalui gambar, diagram, atau video yang dapat diamati dan dipahami secara visual.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <span class="single_feature_icon"><i class="bi bi-ear"></i></span>
+                            <h4>Auditori</h4>
+                            <p>Belajar dengan cara mendengarkan penjelasan, bercerita, podcast atau berdiskusi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="single_feature">
+                        <div class="single_feature_part single_feature_part_2">
+                            <span class="single_service_icon style_icon"><i class="bi bi-hand-index-thumb"></i></span>
+                            <h4>Kinestik</h4>
+                            <p>Belajar dengan cara bergerak, bekerja dan menyentuh. Seperti praktek, bereksperimen, atau bermain </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- upcoming_event part start-->
+
+    <!-- Form Section-->
+    <section class="blog_part section_padding" id="prediksi">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-5">
+                    <div class="section_tittle text-center">
+                        <p>Form Prediksi</p>
+                        <h2>Gaya Belajar</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="section-top-border">
+                        <section class="button-area">
+                            <form method="POST" action="{{ url_for('predict') }}">
+                            <h4 class="mb-30" style="text-align: center;">Isilah kuesioner berikut berdasarkan pilihan yang paling mencerminkan aktivitas belajarmu!</h4>
+                            <h5 class="text-heading">Keterangan:</h5>
+                                <div class="text-ket">
+                                    <p><b>1</b> = sangat tidak setuju</p>
+                                    <p><b>2</b> = tidak setuju</p>
+                                    <p><b>3</b> = netral</p>
+                                    <p><b>4</b> = setuju</p>
+                                    <p><b>5</b> = sangat setuju</p>
+                                </div>
+
+                                <!-- Data Diri -->
+                                <div class="container box_1170 mt-3" aria-label="Basic checkbox toggle button group">
+                                    <div class="single-element-widget mt-30">
+                                            <!-- Jenis Kelamin -->
+                                            <div>
+                                                <h5 class="text-heading">Jenis Kelamin</h5>
+                                                <div class="default-select" id="default-select">
+                                                    <select name="gender" required>
+                                                        <option value="male">Laki-Laki</option>
+                                                        <option value="female">Perempuan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                
+                                            <!-- Umur -->
+                                            <div>
+                                                <h5 class="text-heading">Usia</h5>
+                                                <input type="text" name="age" placeholder="Masukan Usia Anda" 
+                                                onfocus="this.placeholder = ''" 
+                                                onblur="this.placeholder = 'Masukan Usia Anda'"
+                                                required class="single-input">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                <!-- Soal 1 -->
+                                <div class="container box_1170 mt-4" aria-label="Basic checkbox toggle button group">
+                                    <h5 class="text-heading">1. Saya belajar lebih baik dengan membaca apa yang ditulis guru di papan tulis.</h5>
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="q1" id="soal1_1" value="1" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal1_1" style="margin-left: 15px;">1</label>
+                            
+                                        <input type="radio" class="btn-check" name="q1" id="soal1_2" value="2" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal1_2">2</label>
+                            
+                                        <input type="radio" class="btn-check" name="q1" id="soal1_3" value="3" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal1_3">3</label>
+
+                                        <input type="radio" class="btn-check" name="q1" id="soal1_4" value="4" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal1_4">4</label>
+
+                                        <input type="radio" class="btn-check" name="q1" id="soal1_5" value="5" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal1_5">5</label>
+                                    </div>   
+                                </div>
+
+                                <!-- Soal 2 -->
+                                <div class="container box_1170 mt-4" aria-label="Basic checkbox toggle button group">
+                                    <h5 class="text-heading">2. Ketika saya membaca instruksi, saya mengingatnya dengan lebih baik.</h5>
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="q2" id="soal2_1" value="1" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal2_1" style="margin-left: 15px;">1</label>
+                            
+                                        <input type="radio" class="btn-check" name="q2" id="soal2_2" value="2" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal2_2">2</label>
+                            
+                                        <input type="radio" class="btn-check" name="q2" id="soal2_3" value="3" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal2_3">3</label>
+
+                                        <input type="radio" class="btn-check" name="q2" id="soal2_4" value="4" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal2_4">4</label>
+
+                                        <input type="radio" class="btn-check" name="q2" id="soal2_5" value="5" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal2_5">5</label>
+                                    </div>  
+                                </div>
+
+                                <!-- Soal 3 -->
+                                <div class="container box_1170 mt-4">
+                                    <h5 class="text-heading">3. Saya lebih paham ketika membaca instruksi.</h5>
+                                    <div class="btn-group" role="group">
+                                    <input type="radio" class="btn-check" name="q3" id="soal3_1" value="1" autocomplete="off">
+                                    <label class="genric-btn primary-border" for="soal3_1" style="margin-left: 15px;">1</label>
+                                
+                                    <input type="radio" class="btn-check" name="q3" id="soal3_2" value="2" autocomplete="off">
+                                    <label class="genric-btn primary-border" for="soal3_2">2</label>
+                                
+                                    <input type="radio" class="btn-check" name="q3" id="soal3_3" value="3" autocomplete="off">
+                                    <label class="genric-btn primary-border" for="soal3_3">3</label>
+                                
+                                    <input type="radio" class="btn-check" name="q3" id="soal3_4" value="4" autocomplete="off">
+                                    <label class="genric-btn primary-border" for="soal3_4">4</label>
+                                
+                                    <input type="radio" class="btn-check" name="q3" id="soal3_5" value="5" autocomplete="off">
+                                    <label class="genric-btn primary-border" for="soal3_5">5</label>
+                                    </div>
+                                </div>
+  
+
+                                <!-- Soal 4 -->
+                                <div class="container box_1170 mt-4" aria-label="Basic checkbox toggle button group">
+                                    <h5 class="text-heading">4. Saya belajar lebih baik dengan membaca dari pada mendengarkan seseorang.</h5>
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="q4" id="soal4_1" value="1" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal4_1" style="margin-left: 15px;">1</label>
+                            
+                                        <input type="radio" class="btn-check" name="q4" id="soal4_2" value="2" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal4_2">2</label>
+                            
+                                        <input type="radio" class="btn-check" name="q4" id="soal4_3" value="3" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal4_3">3</label>
+
+                                        <input type="radio" class="btn-check" name="q4" id="soal4_4" value="4" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal4_4">4</label>
+
+                                        <input type="radio" class="btn-check" name="q4" id="soal4_5" value="5" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal4_5">5</label>
+                                    </div> 
+                                </div>
+
+                                <!-- Soal 5 -->
+                                <div class="container box_1170 mt-4" aria-label="Basic checkbox toggle button group">
+                                    <h5 class="text-heading">5. Saya belajar lebih banyak dengan membaca buku teks dari pada mendengarkan saat pembelajaran.</h5>
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="q5" id="soal5_1" value="1" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal5_1" style="margin-left: 15px;">1</label>
+                            
+                                        <input type="radio" class="btn-check" name="q5" id="soal5_2" value="2" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal5_2">2</label>
+                            
+                                        <input type="radio" class="btn-check" name="q5" id="soal5_3" value="3" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal5_3">3</label>
+
+                                        <input type="radio" class="btn-check" name="q5" id="soal5_4" value="4" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal5_4">4</label>
+
+                                        <input type="radio" class="btn-check" name="q5" id="soal5_5" value="5" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal5_5">5</label>
+                                    </div> 
+                                </div>
+
+                                <!-- Soal 6 -->
+                                <div class="container box_1170 mt-4" aria-label="Basic checkbox toggle button group">
+                                    <h5 class="text-heading">6. Ketika guru memberi tahu saya instruksi, saya lebih memahami.</h5>
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="q6" id="soal6_1" value="1" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal6_1" style="margin-left: 15px;">1</label>
+                            
+                                        <input type="radio" class="btn-check" name="q6" id="soal6_2" value="2" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal6_2">2</label>
+                            
+                                        <input type="radio" class="btn-check" name="q6" id="soal6_3" value="3" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal6_3">3</label>
+
+                                        <input type="radio" class="btn-check" name="q6" id="soal6_4" value="4" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal6_4">4</label>
+
+                                        <input type="radio" class="btn-check" name="q6" id="soal6_5" value="5" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal6_5">5</label>
+                                    </div>   
+                                </div>
+
+                                <!-- Soal 7 -->
+                                <div class="container box_1170 mt-4" aria-label="Basic checkbox toggle button group">
+                                    <h5 class="text-heading">7. Ketika seseorang memberi tahu saya cara melakukan sesuatu di kelas, saya lebih mudah mempelajarinya.</h5>
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="q7" id="soal7_1" value="1" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal7_1" style="margin-left: 15px;">1</label>
+                            
+                                        <input type="radio" class="btn-check" name="q7" id="soal7_2" value="2" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal7_2">2</label>
+                            
+                                        <input type="radio" class="btn-check" name="q7" id="soal7_3" value="3" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal7_3">3</label>
+
+                                        <input type="radio" class="btn-check" name="q7" id="soal7_4" value="4" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal7_4">4</label>
+
+                                        <input type="radio" class="btn-check" name="q7" id="soal7_5" value="5" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal7_5">5</label>
+                                    </div> 
+                                </div>
+
+                                <!-- Soal 8 -->
+                                <div class="container box_1170 mt-4" aria-label="Basic checkbox toggle button group">
+                                    <h5 class="text-heading">8. Saya lebih mudah mengingat hal-hal yang saya dengar di kelas dari pada hal-hal yang saya baca.</h5>
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="q8" id="soal8_1" value="1" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal8_1" style="margin-left: 15px;">1</label>
+                            
+                                        <input type="radio" class="btn-check" name="q8" id="soal8_2" value="2" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal8_2">2</label>
+                            
+                                        <input type="radio" class="btn-check" name="q8" id="soal8_3" value="3" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal8_3">3</label>
+
+                                        <input type="radio" class="btn-check" name="q8" id="soal8_4" value="4" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal8_4">4</label>
+
+                                        <input type="radio" class="btn-check" name="q8" id="soal8_5" value="5" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal8_5">5</label>
+                                    </div>   
+                                </div>
+
+                                <!-- Soal 9 -->
+                                <div class="container box_1170 mt-4" aria-label="Basic checkbox toggle button group">
+                                    <h5 class="text-heading">9. Saya belajar lebih baik di kelas ketika guru memberikan materi.</h5>
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="q9" id="soal9_1" value="1" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal6_1" style="margin-left: 15px;">1</label>
+                            
+                                        <input type="radio" class="btn-check" name="q9" id="soal9_2" value="2" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal6_2">2</label>
+                            
+                                        <input type="radio" class="btn-check" name="q9" id="soal9_3" value="3" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal9_3">3</label>
+
+                                        <input type="radio" class="btn-check" name="q9" id="soal9_4" value="4" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal9_4">4</label>
+
+                                        <input type="radio" class="btn-check" name="q9" id="soal9_5" value="5" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal9_5">5</label>
+                                    </div> 
+                                </div>
+
+                                <!-- Soal 10 -->
+                                <div class="container box_1170 mt-4" aria-label="Basic checkbox toggle button group">
+                                    <h5 class="text-heading">10. Saya belajar lebih baik di kelas ketika saya mendengarkan orang lain</h5>
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="q10" id="soal10_1" value="1" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal10_1" style="margin-left: 15px;">1</label>
+                            
+                                        <input type="radio" class="btn-check" name="q10" id="soal10_2" value="2" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal10_2">2</label>
+                            
+                                        <input type="radio" class="btn-check" name="q10" id="soal10_3" value="3" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal10_3">3</label>
+
+                                        <input type="radio" class="btn-check" name="q10" id="soal10_4" value="4" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal10_4">4</label>
+
+                                        <input type="radio" class="btn-check" name="q10" id="soal10_5" value="5" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal10_5">5</label>
+                                    </div>   
+                                </div>
+
+                                <!-- Soal 11 -->
+                                <div class="container box_1170 mt-4" aria-label="Basic checkbox toggle button group">
+                                    <h5 class="text-heading">11. Saya lebih suka belajar sambil praktek di kelas.</h5>
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="q11" id="soal11_1" value="1" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal11_1" style="margin-left: 15px;">1</label>
+                            
+                                        <input type="radio" class="btn-check" name="q11" id="soal11_2" value="2" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal11_2">2</label>
+                            
+                                        <input type="radio" class="btn-check" name="q11" id="soal11_3" value="3" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal11_3">3</label>
+
+                                        <input type="radio" class="btn-check" name="q11" id="soal11_4" value="4" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal11_4">4</label>
+
+                                        <input type="radio" class="btn-check" name="q11" id="soal11_5" value="5" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal11_5">5</label>
+                                    </div>   
+                                </div>
+
+                                <!-- Soal 12 -->
+                                <div class="container box_1170 mt-4" aria-label="Basic checkbox toggle button group">
+                                    <h5 class="text-heading">12. Ketika saya melakukan sesuatu di kelas, saya jadi lebih paham.</h5>
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="q12" id="soal12_1" value="1" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal12_1" style="margin-left: 15px;">1</label>
+                            
+                                        <input type="radio" class="btn-check" name="q12" id="soal12_2" value="2" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal12_2">2</label>
+                            
+                                        <input type="radio" class="btn-check" name="q12" id="soal12_3" value="3" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal12_3">3</label>
+
+                                        <input type="radio" class="btn-check" name="q12" id="soal12_4" value="4" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal12_4">4</label>
+
+                                        <input type="radio" class="btn-check" name="q12" id="soal12_5" value="5" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal12_5">5</label>
+                                    </div>   
+                                </div>
+
+                                <!-- Soal 13 -->
+                                <div class="container box_1170 mt-4" aria-label="Basic checkbox toggle button group">
+                                    <h5 class="text-heading">13. Saya senang belajar di kelas dengan melakukan eksperimen.</h5>
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="q13" id="soal13_1" value="1" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal13_1" style="margin-left: 15px;">1</label>
+                            
+                                        <input type="radio" class="btn-check" name="q13" id="soal13_2" value="2" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal13_2">2</label>
+                            
+                                        <input type="radio" class="btn-check" name="q13" id="soal13_3" value="3" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal13_3">3</label>
+
+                                        <input type="radio" class="btn-check" name="q13" id="soal13_4" value="4" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal13_4">4</label>
+
+                                        <input type="radio" class="btn-check" name="q13" id="soal13_5" value="5" autocomplete="off">
+                                        <label class="genric-btn primary-border" for="soal13_5">5</label>
+                                    </div>   
+                                </div>
+
+                                <!-- Soal 14 -->
+                                <div class="container box_1170 mt-4" aria-label="Basic checkbox toggle button group">
+                                    <h5 class="text-heading">14. Saya lebih memahami berbagai hal di kelas ketika saya berpartisipasi dalam permainan peran dalam proses pembelajaran.</h5>
+                                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                            <input type="radio" class="btn-check" name="q14" id="soal14_1" value="1" autocomplete="off">
+                                            <label class="genric-btn primary-border" for="soal14_1" style="margin-left: 15px;">1</label>
+                                
+                                            <input type="radio" class="btn-check" name="q14" id="soal14_2" value="2" autocomplete="off">
+                                            <label class="genric-btn primary-border" for="soal14_2">2</label>
+                                
+                                            <input type="radio" class="btn-check" name="q14" id="soal14_3" value="3" autocomplete="off">
+                                            <label class="genric-btn primary-border" for="soal14_3">3</label>
+
+                                            <input type="radio" class="btn-check" name="q14" id="soal14_4" value="4" autocomplete="off">
+                                            <label class="genric-btn primary-border" for="soal14_4">4</label>
+
+                                            <input type="radio" class="btn-check" name="q14" id="soal14_5" value="5" autocomplete="off">
+                                            <label class="genric-btn primary-border" for="soal14_5">5</label>
+                                        </div>   
+                                </div>
+
+                                <div class="kirim-btn box_1170 mt-4" aria-label="Basic checkbox toggle button group">
+                                    <button type="submit" class="btn_1">Kirim</button>
+                                </div>
+
+                                {% if hasil %}
+                                <div class="alert alert-primary box_1170 mt-4" aria-label="Basic checkbox toggle button group" id="hasil">
+                                    <h5>Hasil prediksi menunjukkan bahwa Anda termasuk tipe belajar: <b> {{ hasil }} </b></h5>
+                                </div>
+                                {% endif %}
+
+                                <script>
+                                    window.onload = function() {
+                                        const hasilDiv = document.getElementById("hasil");
+                                        if (hasilDiv) {
+                                            hasilDiv.scrollIntoView({ behavior: 'smooth' });
+                                        }
+                                    };
+                                </script>
+
+                                
+                            </form> 
+                        </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <!--::blog_part end::-->
+
+    
+<!-- End Align Area -->
+
+    <!-- footer part start-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright_part_text text-center">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script>   <a href="https://colorlib.com" target="_blank">  Risma Bidayatul Hidayah</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+    <!-- jquery -->
+    <script src="{{ url_for('static', filename='js/jquery-1.12.1.min.js')}}"></script>
+    <!-- popper js -->
+    <script src="{{ url_for('static', filename='js/popper.min.js')}}"></script>
+    <!-- bootstrap js -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <!-- easing js -->
+    <script src="{{ url_for('static', filename='js/jquery.magnific-popup.js')}}"></script>
+    <!-- swiper js -->
+    <script src="{{ url_for('static', filename='js/swiper.min.js')}}"></script>
+    <!-- swiper js -->
+    <script src="{{ url_for('static', filename='js/masonry.pkgd.js')}}"></script>
+    <!-- particles js -->
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.nice-select.min.js')}}"></script>
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="{{ url_for('static', filename='js/jquery.counterup.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/waypoints.min.js')}}"></script>
+    <!-- custom js -->
+    <script src="{{ url_for('static', filename='js/custom.js')}}"></script>
+</body>
+</html>
